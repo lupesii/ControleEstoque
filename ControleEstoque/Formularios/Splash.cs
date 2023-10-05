@@ -7,13 +7,14 @@ using System.Linq;
 using System.Text;
 using System.Threading.Tasks;
 using System.Windows.Forms;
+using ControleEstoque.Formularios;
 using MySql.Data.MySqlClient;
 
 namespace ControleEstoque
 {
-    public partial class Form1 : Form
+    public partial class Splash : Form
     {
-        public Form1()
+        public Splash()
         {
             InitializeComponent();
         }
@@ -22,15 +23,16 @@ namespace ControleEstoque
         {
             if (progressBar.Value < 100)
             {
-                progressBar.Value = progressBar.Value + 1;
+                progressBar.Value++;
             }
             else
             {
                 timer.Enabled = false;
                 this.Visible = false;
 
-                //frmLogin telaLogin = new frmLogin();
-                //telaLogin.Show();
+
+                frmLogin telaLogin = new frmLogin();
+                telaLogin.Show();
             }
         }
     }

@@ -5,7 +5,7 @@ using System.Xml.Linq;
 
 namespace ControleEstoque
 {
-    partial class Form1
+    partial class Splash
     {
         /// <summary>
         ///  Required designer variable.
@@ -87,8 +87,9 @@ namespace ControleEstoque
             this.pictureBox1.SizeMode = System.Windows.Forms.PictureBoxSizeMode.Zoom;
             this.pictureBox1.TabIndex = 4;
             this.pictureBox1.TabStop = false;
+            this.pictureBox1.UseWaitCursor = true;
             // 
-            // Form1
+            // Splash
             // 
             this.AutoScaleDimensions = new System.Drawing.SizeF(6F, 13F);
             this.AutoScaleMode = System.Windows.Forms.AutoScaleMode.Font;
@@ -100,7 +101,7 @@ namespace ControleEstoque
             this.Controls.Add(this.lblEstoque);
             this.Controls.Add(this.lblEmpresa);
             this.FormBorderStyle = System.Windows.Forms.FormBorderStyle.SizableToolWindow;
-            this.Name = "Form1";
+            this.Name = "Splash";
             this.ShowIcon = false;
             this.StartPosition = System.Windows.Forms.FormStartPosition.CenterScreen;
             this.Text = "Carregando...";
