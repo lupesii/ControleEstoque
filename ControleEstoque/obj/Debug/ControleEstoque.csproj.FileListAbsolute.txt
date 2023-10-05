@@ -1,0 +1,12 @@
+C:\Users\lucas\Documents\cursos-projetos\ControleEstoque\ControleEstoque\bin\Debug\ControleEstoque.exe.config
+C:\Users\lucas\Documents\cursos-projetos\ControleEstoque\ControleEstoque\bin\Debug\ControleEstoque.exe
+C:\Users\lucas\Documents\cursos-projetos\ControleEstoque\ControleEstoque\bin\Debug\ControleEstoque.pdb
+C:\Users\lucas\Documents\cursos-projetos\ControleEstoque\ControleEstoque\bin\Debug\MySql.Data.dll
+C:\Users\lucas\Documents\cursos-projetos\ControleEstoque\ControleEstoque\obj\Debug\ControleEstoque.csproj.AssemblyReference.cache
+C:\Users\lucas\Documents\cursos-projetos\ControleEstoque\ControleEstoque\obj\Debug\ControleEstoque.Form1.resources
+C:\Users\lucas\Documents\cursos-projetos\ControleEstoque\ControleEstoque\obj\Debug\ControleEstoque.Properties.Resources.resources
+C:\Users\lucas\Documents\cursos-projetos\ControleEstoque\ControleEstoque\obj\Debug\ControleEstoque.csproj.GenerateResource.cache
+C:\Users\lucas\Documents\cursos-projetos\ControleEstoque\ControleEstoque\obj\Debug\ControleEstoque.csproj.CoreCompileInputs.cache
+C:\Users\lucas\Documents\cursos-projetos\ControleEstoque\ControleEstoque\obj\Debug\ControleEstoque.csproj.CopyComplete
+C:\Users\lucas\Documents\cursos-projetos\ControleEstoque\ControleEstoque\obj\Debug\ControleEstoque.exe
+C:\Users\lucas\Documents\cursos-projetos\ControleEstoque\ControleEstoque\obj\Debug\ControleEstoque.pdb
