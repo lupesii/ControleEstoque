@@ -74,7 +74,7 @@
             this.btnEntrar.Font = new System.Drawing.Font("Calibri", 11.25F);
             this.btnEntrar.Location = new System.Drawing.Point(172, 170);
             this.btnEntrar.Name = "btnEntrar";
-            this.btnEntrar.Size = new System.Drawing.Size(62, 30);
+            this.btnEntrar.Size = new System.Drawing.Size(62, 32);
             this.btnEntrar.TabIndex = 6;
             this.btnEntrar.Text = "Entrar";
             this.btnEntrar.UseVisualStyleBackColor = true;
@@ -113,7 +113,7 @@
             this.btnSair.Font = new System.Drawing.Font("Calibri", 11.25F);
             this.btnSair.Location = new System.Drawing.Point(247, 170);
             this.btnSair.Name = "btnSair";
-            this.btnSair.Size = new System.Drawing.Size(62, 30);
+            this.btnSair.Size = new System.Drawing.Size(62, 32);
             this.btnSair.TabIndex = 10;
             this.btnSair.Text = "Sair";
             this.btnSair.UseVisualStyleBackColor = true;
