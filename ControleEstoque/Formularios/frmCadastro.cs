@@ -20,6 +20,14 @@ namespace ControleEstoque.Formularios
         MySqlDataReader reader;
         string strSql;
 
+        public void LimparCampos()
+        {
+            txtEmail.Clear();
+            txtSenha.Clear();
+            txtConfSenha.Clear();
+            txtEmail.Focus();
+        }
+
         public frmCadastro()
         {
             InitializeComponent();
@@ -30,16 +38,42 @@ namespace ControleEstoque.Formularios
         {
             try
             {
+                strSql = "SELECT * FROM Usuarios WHERE Email = @ParEmail";
+                comando = new MySqlCommand(strSql, conexao);
+                comando.Parameters.Clear();
+                comando.Parameters.AddWithValue("@ParEmail", txtEmail.Text);
                 conexao.Open();
-                MessageBox.Show("Conectado");
+                reader = comando.ExecuteReader();
+
+                if (!reader.HasRows && txtSenha.Text == txtConfSenha.Text)
+                {
+                    comando = null;
+                    conexao.Close();
+
+                    strSql = "INSERT INTO Usuarios (Email, Senha) VALUES (@ParEmail, @ParSenha)";
+                    comando = new MySqlCommand(strSql, conexao);
+                    comando.Parameters.Clear();
+                    comando.Parameters.AddWithValue("@ParEmail", txtEmail.Text);
+                    comando.Parameters.AddWithValue("@ParSenha", txtSenha.Text);
+                    conexao.Open();
+                    comando.ExecuteNonQuery();
+                }
+                else
+                {
+                    MessageBox.Show("Cadastro não pode ser completado","ERRO", MessageBoxButtons.OK, MessageBoxIcon.Error);
+                }
+
             }
-            catch
+            catch (MySqlException Erro)
             {
-                MessageBox.Show("Erro");
+                MessageBox.Show("Erro -> " + Erro.Message);
+                Application.Exit();
             }
             finally
             {
+                LimparCampos();
                 conexao.Close();
+                comando = null;
             }
         }
 

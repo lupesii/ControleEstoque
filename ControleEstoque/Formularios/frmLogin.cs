@@ -39,8 +39,8 @@ namespace ControleEstoque.Formularios
 
         private void lblCadastrar_Click(object sender, EventArgs e)
         {
-            //frmCadastro telaCadastro = new();
-            //telaCadastro.Show();
+            frmCadastro telaCadastro = new frmCadastro();
+            telaCadastro.Show();
         }
 
     }

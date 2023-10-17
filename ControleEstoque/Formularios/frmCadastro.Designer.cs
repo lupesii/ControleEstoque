@@ -101,6 +101,7 @@
             this.btnSair.TabIndex = 12;
             this.btnSair.Text = "Sair";
             this.btnSair.UseVisualStyleBackColor = true;
+            this.btnSair.Click += new System.EventHandler(this.btnSair_Click);
             // 
             // btnEntrar
             // 
@@ -111,8 +112,9 @@
             this.btnEntrar.TabIndex = 11;
             this.btnEntrar.Text = "Cadastrar";
             this.btnEntrar.UseVisualStyleBackColor = true;
+            this.btnEntrar.Click += new System.EventHandler(this.btnCadastrar_Click);
             // 
-            // Cadastro
+            // frmCadastro
             // 
             this.AutoScaleDimensions = new System.Drawing.SizeF(6F, 13F);
             this.AutoScaleMode = System.Windows.Forms.AutoScaleMode.Font;
@@ -128,7 +130,7 @@
             this.Controls.Add(this.lblEmail);
             this.Controls.Add(this.txtEmail);
             this.FormBorderStyle = System.Windows.Forms.FormBorderStyle.SizableToolWindow;
-            this.Name = "Cadastro";
+            this.Name = "frmCadastro";
             this.ShowIcon = false;
             this.StartPosition = System.Windows.Forms.FormStartPosition.CenterScreen;
             this.Text = "Cadastrar usuário";
