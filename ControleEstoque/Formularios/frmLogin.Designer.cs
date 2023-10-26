@@ -36,6 +36,7 @@
             this.lblSenha = new System.Windows.Forms.Label();
             this.txtSenha = new System.Windows.Forms.TextBox();
             this.btnSair = new System.Windows.Forms.Button();
+            this.checkBox = new System.Windows.Forms.CheckBox();
             ((System.ComponentModel.ISupportInitialize)(this.pictureBox1)).BeginInit();
             this.SuspendLayout();
             // 
@@ -62,7 +63,7 @@
             this.lblCadastro.AutoSize = true;
             this.lblCadastro.Font = new System.Drawing.Font("Calibri", 9.75F, System.Drawing.FontStyle.Underline);
             this.lblCadastro.ForeColor = System.Drawing.Color.Blue;
-            this.lblCadastro.Location = new System.Drawing.Point(26, 178);
+            this.lblCadastro.Location = new System.Drawing.Point(26, 197);
             this.lblCadastro.Name = "lblCadastro";
             this.lblCadastro.Size = new System.Drawing.Size(108, 15);
             this.lblCadastro.TabIndex = 5;
@@ -72,7 +73,7 @@
             // btnEntrar
             // 
             this.btnEntrar.Font = new System.Drawing.Font("Calibri", 11.25F);
-            this.btnEntrar.Location = new System.Drawing.Point(172, 170);
+            this.btnEntrar.Location = new System.Drawing.Point(172, 189);
             this.btnEntrar.Name = "btnEntrar";
             this.btnEntrar.Size = new System.Drawing.Size(62, 32);
             this.btnEntrar.TabIndex = 6;
@@ -107,11 +108,12 @@
             this.txtSenha.Name = "txtSenha";
             this.txtSenha.Size = new System.Drawing.Size(138, 25);
             this.txtSenha.TabIndex = 8;
+            this.txtSenha.UseSystemPasswordChar = true;
             // 
             // btnSair
             // 
             this.btnSair.Font = new System.Drawing.Font("Calibri", 11.25F);
-            this.btnSair.Location = new System.Drawing.Point(247, 170);
+            this.btnSair.Location = new System.Drawing.Point(247, 189);
             this.btnSair.Name = "btnSair";
             this.btnSair.Size = new System.Drawing.Size(62, 32);
             this.btnSair.TabIndex = 10;
@@ -119,13 +121,26 @@
             this.btnSair.UseVisualStyleBackColor = true;
             this.btnSair.Click += new System.EventHandler(this.btnSair_Click);
             // 
+            // checkBox
+            // 
+            this.checkBox.AutoSize = true;
+            this.checkBox.Font = new System.Drawing.Font("Calibri", 9.75F);
+            this.checkBox.Location = new System.Drawing.Point(171, 154);
+            this.checkBox.Name = "checkBox";
+            this.checkBox.Size = new System.Drawing.Size(107, 19);
+            this.checkBox.TabIndex = 11;
+            this.checkBox.Text = "Mostrar senha";
+            this.checkBox.UseVisualStyleBackColor = true;
+            this.checkBox.CheckedChanged += new System.EventHandler(this.checkBox_CheckedChanged);
+            // 
             // frmLogin
             // 
             this.AutoScaleDimensions = new System.Drawing.SizeF(6F, 13F);
             this.AutoScaleMode = System.Windows.Forms.AutoScaleMode.Font;
             this.BackColor = System.Drawing.Color.White;
-            this.ClientSize = new System.Drawing.Size(323, 212);
+            this.ClientSize = new System.Drawing.Size(323, 233);
             this.ControlBox = false;
+            this.Controls.Add(this.checkBox);
             this.Controls.Add(this.btnSair);
             this.Controls.Add(this.lblSenha);
             this.Controls.Add(this.txtSenha);
@@ -155,5 +170,6 @@
         private System.Windows.Forms.Label lblSenha;
         private System.Windows.Forms.TextBox txtSenha;
         private System.Windows.Forms.Button btnSair;
+        private System.Windows.Forms.CheckBox checkBox;
     }
 }
