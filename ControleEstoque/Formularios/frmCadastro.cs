@@ -8,7 +8,6 @@ using System.Linq;
 using System.Text;
 using System.Threading.Tasks;
 using System.Windows.Forms;
-using MySql.Data.MySqlClient;
 
 namespace ControleEstoque.Formularios
 {
@@ -38,14 +37,24 @@ namespace ControleEstoque.Formularios
         {
             try
             {
-                strSql = "SELECT * FROM Usuarios WHERE Email = @ParEmail";
+                strSql = "SELECT Email FROM Usuarios WHERE Email = @ParEmail";
                 comando = new MySqlCommand(strSql, conexao);
                 comando.Parameters.Clear();
                 comando.Parameters.AddWithValue("@ParEmail", txtEmail.Text);
                 conexao.Open();
-                reader = comando.ExecuteReader();
+                comando.ExecuteScalar();
 
-                if (!reader.HasRows && txtSenha.Text == txtConfSenha.Text)
+                if (comando.ExecuteScalar() != null)
+                {
+                    MessageBox.Show("Email já esta cadastrado, verifique", "Alerta", MessageBoxButtons.OK, MessageBoxIcon.Information);
+                    return;
+                }
+                else if (txtSenha.Text != txtConfSenha.Text)
+                {
+                    MessageBox.Show("As senhas não coincidem", "Alerta", MessageBoxButtons.OK, MessageBoxIcon.Information);
+                    return;
+                }
+                else
                 {
                     comando = null;
                     conexao.Close();
@@ -57,10 +66,6 @@ namespace ControleEstoque.Formularios
                     comando.Parameters.AddWithValue("@ParSenha", txtSenha.Text);
                     conexao.Open();
                     comando.ExecuteNonQuery();
-                }
-                else
-                {
-                    MessageBox.Show("Cadastro não pode ser completado","ERRO", MessageBoxButtons.OK, MessageBoxIcon.Error);
                 }
 
             }

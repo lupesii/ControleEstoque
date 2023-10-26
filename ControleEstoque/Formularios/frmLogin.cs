@@ -22,6 +22,12 @@ namespace ControleEstoque.Formularios
             MessageBox.Show("Ainda não programado", "SE ACALME HOMI", MessageBoxButtons.OK, MessageBoxIcon.Information);
         }
 
+
+        private void lblCadastrar_Click(object sender, EventArgs e)
+        {
+            frmCadastro telaCadastro = new frmCadastro();
+            telaCadastro.Show();
+        }
         private void btnSair_Click(object sender, EventArgs e)
         {
             DialogResult Resposta;
@@ -35,12 +41,6 @@ namespace ControleEstoque.Formularios
                 case DialogResult.No:
                     break;
             }
-        }
-
-        private void lblCadastrar_Click(object sender, EventArgs e)
-        {
-            frmCadastro telaCadastro = new frmCadastro();
-            telaCadastro.Show();
         }
 
     }
