@@ -12,3 +12,4 @@ C:\Users\lucas\Documents\cursos-projetos\ControleEstoque\ControleEstoque\obj\Deb
 C:\Users\lucas\Documents\cursos-projetos\ControleEstoque\ControleEstoque\obj\Debug\ControleEstoque.Formularios.frmLogin.resources
 C:\Users\lucas\Documents\cursos-projetos\ControleEstoque\ControleEstoque\obj\Debug\ControleEstoque.Splash.resources
 C:\Users\lucas\Documents\cursos-projetos\ControleEstoque\ControleEstoque\obj\Debug\ControleEstoque.Formularios.frmCadastro.resources
+C:\Users\lucas\Documents\cursos-projetos\ControleEstoque\ControleEstoque\obj\Debug\ControleEstoque.Formularios.frmPrincipal.resources
