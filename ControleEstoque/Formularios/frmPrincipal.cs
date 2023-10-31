@@ -25,15 +25,9 @@ namespace ControleEstoque.Formularios
         private void frmPrincipal_FormClosing(object sender, FormClosingEventArgs e)
         {
             if (MessageBox.Show("Deseja Sair?","Alerta", MessageBoxButtons.YesNo, MessageBoxIcon.Asterisk) == DialogResult.Yes)
-<<<<<<< HEAD
                 e.Cancel = false;
             else
                 e.Cancel = true;
-=======
-                e.Cancel = true;
-            else
-                e.Cancel = false;
->>>>>>> 4bb68e1c27fdfbbc00e1f96b3c8042963b5d3b6e
         }
     }
 }
